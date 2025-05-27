@@ -1,0 +1,7 @@
+streamlit
+pandas
+scikit-learn
+joblib
+gspread
+oauth2client
+openpyxl
