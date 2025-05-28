@@ -17,7 +17,7 @@ scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/au
 creds_dict = json.loads(st.secrets["GOOGLE_SHEETS_CREDENTIALS"])
 creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict, scope)
 client = gspread.authorize(creds)
-worksheet = client.open("feedbacks_cleary").sheet1
+worksheet = client.open("Feedbacks-TFI").sheet1
 
 # Charger les données
 data = worksheet.get_all_records()
